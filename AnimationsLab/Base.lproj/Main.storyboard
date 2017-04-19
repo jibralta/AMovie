@@ -25,14 +25,29 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowy" translatesAutoresizingMaskIntoConstraints="NO" id="2Yi-ZH-mxN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVO-ue-H4n">
-                                <rect key="frame" x="16" y="20" width="83" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redArrow" translatesAutoresizingMaskIntoConstraints="NO" id="SxF-Mq-HGH">
+                                <rect key="frame" x="42" y="107" width="42" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="zc5-I4-QV2"/>
+                                    <constraint firstAttribute="width" constant="42" id="Hmu-sY-MfR"/>
+                                    <constraint firstAttribute="height" constant="33" id="eDc-F7-JXa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
-                                <state key="normal" title="Action!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVO-ue-H4n">
+                                <rect key="frame" x="30" y="170" width="67" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="7Iu-ff-7eE"/>
+                                    <constraint firstAttribute="height" constant="28" id="frT-1f-46d"/>
+                                    <constraint firstAttribute="width" constant="67" id="zc5-I4-QV2"/>
+                                </constraints>
+                                <state key="normal" image="LaunchButton">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Take Down Balloon!">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="actionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVJ-cC-nl1"/>
@@ -62,31 +77,70 @@
                                     <constraint firstAttribute="height" constant="256" id="bzS-n7-8aa"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spider_PNG39" translatesAutoresizingMaskIntoConstraints="NO" id="9oB-Ug-Yxe">
-                                <rect key="frame" x="263" y="272" width="122" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spider_PNG39" translatesAutoresizingMaskIntoConstraints="NO" id="9oB-Ug-Yxe">
+                                <rect key="frame" x="250" y="305" width="65" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="LSQ-XJ-Lmc"/>
+                                    <constraint firstAttribute="height" constant="56" id="s1I-MH-BsN"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE END" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTt-ay-v9S">
+                                <rect key="frame" x="42" y="222" width="290" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="7O4-aN-u3g"/>
+                                    <constraint firstAttribute="height" constant="59" id="ShW-HS-JnA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Very Short Film" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So4-nX-bsn">
+                                <rect key="frame" x="108" y="50" width="158" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="ef3-2y-KlR"/>
+                                    <constraint firstAttribute="width" constant="158" id="zta-rc-ZXs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="9oB-Ug-Yxe" firstAttribute="centerY" secondItem="2Yi-ZH-mxN" secondAttribute="centerY" id="4jk-wR-Plq"/>
                             <constraint firstItem="rV9-zn-aNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="9b7-vp-b9o"/>
                             <constraint firstItem="88d-6T-4kh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="EtX-1m-dnp"/>
                             <constraint firstAttribute="trailing" secondItem="2Yi-ZH-mxN" secondAttribute="trailing" id="J0a-0t-l7e"/>
+                            <constraint firstItem="So4-nX-bsn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NhW-EF-wQ0"/>
+                            <constraint firstItem="FTt-ay-v9S" firstAttribute="top" secondItem="FVO-ue-H4n" secondAttribute="bottom" constant="24" id="QRZ-WF-qrp"/>
                             <constraint firstItem="2Yi-ZH-mxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S0u-Ao-vwt"/>
+                            <constraint firstItem="FTt-ay-v9S" firstAttribute="centerX" secondItem="2Yi-ZH-mxN" secondAttribute="centerX" id="chZ-M3-Yc6"/>
+                            <constraint firstItem="So4-nX-bsn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="fw9-SV-Dea"/>
                             <constraint firstAttribute="bottom" secondItem="2Yi-ZH-mxN" secondAttribute="bottom" id="gDV-Ed-TYS"/>
                             <constraint firstItem="PDi-UA-BKC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="gpb-vA-N2y"/>
-                            <constraint firstItem="FVO-ue-H4n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="h0O-VJ-iJn"/>
+                            <constraint firstItem="FVO-ue-H4n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="h0O-VJ-iJn"/>
                             <constraint firstItem="88d-6T-4kh" firstAttribute="leading" secondItem="rV9-zn-aNs" secondAttribute="leading" id="oPM-NH-cID"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rV9-zn-aNs" secondAttribute="bottom" constant="210" id="rBW-JY-m6q"/>
-                            <constraint firstItem="rV9-zn-aNs" firstAttribute="leading" secondItem="FVO-ue-H4n" secondAttribute="leading" constant="-16" id="rsI-gn-rE5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9oB-Ug-Yxe" secondAttribute="trailing" constant="44" id="rXg-HS-8CN"/>
+                            <constraint firstItem="rV9-zn-aNs" firstAttribute="leading" secondItem="FVO-ue-H4n" secondAttribute="leading" constant="-30" id="rsI-gn-rE5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PDi-UA-BKC" secondAttribute="trailing" constant="66" id="uYq-LM-2Oy"/>
+                            <constraint firstItem="FVO-ue-H4n" firstAttribute="centerX" secondItem="SxF-Mq-HGH" secondAttribute="centerX" id="xU5-8D-RRC"/>
+                            <constraint firstItem="FVO-ue-H4n" firstAttribute="top" secondItem="SxF-Mq-HGH" secondAttribute="bottom" constant="30" id="yuf-LA-uM1"/>
                             <constraint firstItem="2Yi-ZH-mxN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yvZ-6i-mwQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="FVO-ue-H4n" id="9PT-uQ-7vH"/>
                         <outlet property="hotAirBalloon" destination="PDi-UA-BKC" id="Ybt-PX-4gE"/>
+                        <outlet property="introLabel" destination="So4-nX-bsn" id="qy6-lA-kqD"/>
                         <outlet property="pterodactyl" destination="rV9-zn-aNs" id="QMY-fC-hGd"/>
+                        <outlet property="redArrow" destination="SxF-Mq-HGH" id="O5f-1l-QH7"/>
                         <outlet property="spider" destination="9oB-Ug-Yxe" id="f7I-vk-bmg"/>
+                        <outlet property="theEnd" destination="FTt-ay-v9S" id="dT4-LQ-QgV"/>
                         <outlet property="wolf" destination="88d-6T-4kh" id="XWp-3n-Qom"/>
                     </connections>
                 </viewController>
@@ -96,9 +150,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LaunchButton" width="617" height="330"/>
         <image name="Wolf_Head_Howl_clip_art_medium" width="249" height="298"/>
         <image name="balloon" width="50" height="65"/>
         <image name="dino" width="1189" height="1280"/>
+        <image name="redArrow" width="600" height="483"/>
         <image name="snowy" width="2048" height="1536"/>
         <image name="spider_PNG39" width="450" height="427"/>
     </resources>
