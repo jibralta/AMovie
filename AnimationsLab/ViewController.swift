@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: IBOutlets
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var redArrow: UIImageView!
     @IBOutlet weak var introLabel: UILabel!
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var wolf: UIImageView!
     @IBOutlet weak var spider: UIImageView!
     
+    // MARK: Override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -80,6 +82,7 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: Custom methods
     func redArrowBounce() {
         UIView.animate(withDuration: 10.0, delay: 0.2, usingSpringWithDamping: 0.05, initialSpringVelocity: 0.4, options: .repeat, animations: {
             self.redArrow.center.y += self.actionButton.bounds.height-10.0
@@ -121,6 +124,7 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: IBActions
     @IBAction func actionButtonTapped(_ sender: UIButton) {
         launchPterodactyl()
         
